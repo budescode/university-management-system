@@ -1,0 +1,70 @@
+{% extends 'index/base.html' %}
+{% block body %}
+<h2>Login</h2>
+<div class="container" style="margin-top: 120px;">
+	<div class="row">
+		<div class="col-md-12">
+
+			<ul class="nav nav-pills">
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Home</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Students</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">{{qs.first_name}} {{qs.middle_name}} {{qs.other_names}}</a>
+			  </li>
+
+			</ul>
+			<br>
+
+			<div class="jumbotron">
+				<h2>{{qs.first_name}} {{qs.middle_name}} {{qs.other_names}}</h2>
+				<P></P>
+<div class="alert alert-dark">
+    <strong>GENDER:</strong> {{qs.gender}}
+</div>
+
+<div class="alert alert-dark">
+    <strong>DATE OF BIRTH:</strong> {{qs.date_of_birth}}
+</div>
+
+
+
+<div class="alert alert-dark">
+    <strong>EMAIL:</strong> {{qs.email}}
+</div>
+
+<div class="alert alert-dark">
+    <strong>JAMB REG NO.</strong> {{qs.jamb_reg_no}}
+</div>
+
+<div class="alert alert-dark">
+    <strong>FACULTY:</strong> {{qs.faculty}}
+</div>
+
+<div class="alert alert-dark">
+    <strong>DEPARTMENT:</strong> {{qs.department}}
+</div>
+
+<div class="alert alert-dark">
+    <strong>COURSE OF STUDY:</strong> {{qs.course_of_study}}
+</div>
+
+<div class="alert alert-primary">
+    <strong>{% if qs.admitted == True %}ADMITTED {% else %} NOT ADMITTED {% endif %}</strong> 
+</div>
+
+
+		
+			
+				
+			</div>
+
+		</div>
+
+</div>
+</div>
+
+{% endblock %}

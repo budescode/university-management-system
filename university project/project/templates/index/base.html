@@ -58,16 +58,22 @@
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admission</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="">Apply For Admission</a>
+										<li class="nav-item"><a class="nav-link" href="{% url 'users:register' %}">Apply For Admission</a>
 										<li class="nav-item"><a class="nav-link" href="">Check Admission</a></li>
 									</ul>
 								</li> 
-								<!-- <li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+										<li class="nav-item"><a class="nav-link" href="{% url 'users:login' %}">Login</a></li>
+                                        {% if request.user.is_authenticated %}
+
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'users:profile' %}">Profile</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'users:logout' %}">Log out</a></li>
+                                        {% endif %}
+                                        
 									</ul>
-								</li>  -->
+								</li> 
                                 <li class="nav-item"><a class="nav-link" href="{% url 'index:blog' %}">Blog</a></li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'index:contact' %}">Contact</a></li>
 							</ul>

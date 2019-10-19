@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect, HttpResponse, JsonResponse
 from .models import Faculty, Department
-
+from django.contrib.auth.models import User
 
 #this is the main administrator view
 def administrator(request):
-	return render(request, 'administrator/index.html')
+	return render(request, 'admin1/index.html')
 
 
 #this view will give list of faculty
@@ -13,7 +13,7 @@ def faculty_view(request):
 	domain = request.get_host()
 	qs = Faculty.objects.all()
 	context = {'qs':qs, 'domain':domain}
-	return render(request, 'administrator/faculty.html', context)
+	return render(request, 'admin1/faculty.html', context)
 
 #this view will give list of the department
 def department_view(request):
@@ -21,7 +21,7 @@ def department_view(request):
 	qs = Department.objects.all()
 	faculty  = Faculty.objects.all()
 	context = {'qs':qs, 'domain':domain, 'faculty':faculty}
-	return render(request, 'administrator/department.html', context)
+	return render(request, 'admin1/department.html', context)
 
 #this view is to add faculty
 def add_faculty_view(request):
@@ -79,3 +79,8 @@ def delete_department_view(request, id):
 	qs.delete()
 	print('yeahhh', qs)
 	return JsonResponse({'id':id})
+
+def students(request):
+	qs = User.objects.filter(is_staff = False)
+	context = {'qs':qs}
+	return render(request, 'admin1/students.html', context)

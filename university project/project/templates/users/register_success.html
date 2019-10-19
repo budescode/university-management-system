@@ -1,0 +1,30 @@
+{%  extends "index/base.html" %}
+{% block body %}
+<title>  Password Successfully Changed | atreat4u</title>
+<div class="container">
+<div class="row">
+    <div class="col-md-6 md-offset-3" style="margin-top:120px;">
+    	<p>
+    		Username: {{username}}<br>
+    		Password: {{password}}
+    	</p>
+        <hr>
+        <center><h1 style="font-family: 'black_jackregular';"><i class="fa fa-paper-plane" aria-hidden="true" style="color: orange"></i>&nbsp; Successfully Registered </h1></center><br>
+        <hr>
+        <p>
+         <center><p>Click on the button below to login</p></center>
+<a href=""><button type="button" class="btn btn-md btn-block" style="background-color: rgb(123, 197, 26); color: white;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;Login</button></a>
+    
+     </p>
+    <br>
+    <hr>
+</div>
+ <div class="col-md-6">
+ <br>
+ <br>
+ <br>
+
+ </div>
+</div>
+</div>
+{% endblock %}

@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"return"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"use",
+				"user"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"F",
+				"Faculty"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"p",
+				"passport"
+			],
+			[
+				"c",
+				"course_of_study"
+			],
+			[
+				"d",
+				"date_of_birth"
+			],
+			[
+				"ge",
+				"gender"
+			],
+			[
+				"e",
+				"email"
+			],
+			[
+				"o",
+				"course_of_study"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
 				"edit",
 				"editdepartment"
 			],
@@ -26,10 +94,6 @@
 			[
 				"editdepa",
 				"editdepartment"
-			],
-			[
-				"de",
-				"department"
 			],
 			[
 				"td",
@@ -56,16 +120,8 @@
 				"icon2"
 			],
 			[
-				"d",
-				"domain"
-			],
-			[
 				"in",
 				"innerHTML"
-			],
-			[
-				"re",
-				"request"
 			],
 			[
 				"reu",
@@ -172,10 +228,6 @@
 				"font-family"
 			],
 			[
-				"fo",
-				"font-family"
-			],
-			[
 				"st",
 				"style\tAttr"
 			],
@@ -218,14 +270,6 @@
 			[
 				"backgrou",
 				"background-color"
-			],
-			[
-				"margin",
-				"margin-top"
-			],
-			[
-				"c",
-				"col-sm-3"
 			],
 			[
 				"po",
@@ -304,10 +348,6 @@
 				"csv_file"
 			],
 			[
-				"p",
-				"permission_required"
-			],
-			[
 				"red",
 				"redirect_to"
 			],
@@ -318,14 +358,6 @@
 			[
 				"va",
 				"value"
-			],
-			[
-				"use",
-				"user_total"
-			],
-			[
-				"us",
-				"user"
 			],
 			[
 				"P",
@@ -342,10 +374,6 @@
 			[
 				"Po",
 				"PosterAdmin"
-			],
-			[
-				"F",
-				"False"
 			],
 			[
 				"au",
@@ -390,10 +418,6 @@
 			[
 				"fro",
 				"form2"
-			],
-			[
-				"user",
-				"username"
 			],
 			[
 				"b",
@@ -468,10 +492,6 @@
 				"startamount"
 			],
 			[
-				"e",
-				"endbrand"
-			],
-			[
 				"tota",
 				"total_price"
 			],
@@ -492,47 +512,84 @@
 				"alt\tAttr"
 			],
 			[
-				"ge",
-				"get"
-			],
-			[
 				"img",
 				"img-responsive"
-			],
-			[
-				"h",
-				"h3\tTag"
-			],
-			[
-				"sh",
-				"share_string"
-			],
-			[
-				"addr",
-				"address_list"
-			],
-			[
-				"C",
-				"CharField"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "university project/project/templates/admin1/students.html",
+			"settings":
+			{
+				"buffer_size": 3371,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/admin1/index.html",
+			"settings":
+			{
+				"buffer_size": 29695,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "university project/project/static/administrator/assets/plugins/bootstrap/css/bootstrap.min.css",
+			"settings":
+			{
+				"buffer_size": 153182,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "university project/project/templates/administrator/department.html",
 			"settings":
 			{
-				"buffer_size": 10129,
+				"buffer_size": 10160,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "university project/project/administrator/views.py",
+			"contents": " \n  <aside class=\"main-sidebar\">\n    <!-- sidebar: style can be found in sidebar.less -->\n    <section class=\"sidebar\">\n      <!-- Sidebar user panel -->\n\n\n      <!-- /.search form -->\n      <!-- sidebar menu: : style can be found in sidebar.less -->\n      <ul class=\"sidebar-menu\" data-widget=\"tree\">\n\n \n        <li>\n          <a href=\"{% url 'administrator:administrator' %}\">\n          <i class=\"fa fa-dashboard\"></i> <span>Dashboard</span>\n          </a>\n        </li>\n        \n        <li>\n          <a href=\"{% url 'administrator:students' %}\">\n            <i class=\"fa fa-list-alt\"></i> <span>Students</span>\n          </a>\n        </li>\n        <li>\n          <a href=\"{% url 'administrator:faculty' %}\">\n            <i class=\"fa fa-list-alt\"></i> <span>Faculty</span>\n          </a>\n        </li>\n        \n        <li>\n          <a href=\"{% url 'administrator:department' %}\">\n            <i class=\"fa fa-list-alt\"></i> <span>Department</span>\n          </a>\n        </li>\n  \n        <li>\n          <a href=\"pages/calendar.html\">\n            <i class=\"fa fa-lock\"></i> <span>Manage Profile</span>\n          </a>\n        </li>\n\n\n\n      </ul>\n    </section>\n    <!-- /.sidebar -->\n  </aside>",
+			"file": "university project/project/templates/administrator/sidebar.html",
+			"file_size": 1244,
+			"file_write_time": 132152691283433085,
 			"settings":
 			{
-				"buffer_size": 2531,
+				"buffer_size": 1198,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/templates/outdoor-meal.html",
+			"settings":
+			{
+				"buffer_size": 1177,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{% extends 'admin1/index.html' %}\n\n{% block shortcut %}\n{% endblock %}\n{% block body %}\n\n<body>\n<div class=\"col-md-12\">\n<div class=\"table-responsive\">\n<table class=\"table\">\n    <thead class=\"thead-dark\">\n      <tr>\n        <th><i class=\"fa fa-school\"></i> Name</th>\n        <th><i class=\"fa fa-school\"></i> Faculty</th>\n        <th><i class=\"fa fa-school\"></i> Department</th>\n        \n        <th><i class=\"fa fa-edit\"></i> Admission Status</th>\n        <th> <i class=\"fa fa-trash\"></i> Delete</th>\n        <th></th>\n        \n      </tr>\n    </thead>\n    <tbody id=\"tablebody\">\n    {% for i in qs %}\n      <tr id=\"tr{{i.id}}\">\n        <td id=\"faculty{{i.id}}\">{{i.student.admitted}}  {{i.user.middle_name}} {{i.user.other_names}}</td>\n        <td id=\"faculty{{i.id}}\">{{i.username}} </td>\n        \n\n       <td> <button class=\"btn btn-primary btn-small\" data-toggle=\"modal\" data-target=\"#myModal\" onclick=\"editFaculty('{{i.id}}')\">Edit</button> \n       </td>\n\n        <td> <button class=\"btn btn-danger btn-small\" onclick=\"deleteFaculty('{{i.id}}')\">Delete</button></td>\n        <td id='loading{{i.id}}' style=\"display: none;\">Loading...</td>\n        \n      </tr>\n  {% endfor %}\n    </tbody>\n  </table>\n</div>\n\n\n<button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#myModal1\">Add</button>\n</div>\n\n\n\n  <!-- The Modal -->\n<!--   this modal is to edit faculties -->\n  <div class=\"modal fade\" id=\"myModal\">\n    <div class=\"modal-dialog modal-dialog-centered\">\n      <div class=\"modal-content\">\n      \n        <!-- Modal Header -->\n        <div class=\"modal-header\">\n          <h4 class=\"modal-title\">Edit Faculty </h4>\n          <p id=\"modal_id\" style=\"display: hidden;\"></p>\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n        </div>\n        \n        <!-- Modal body -->\n        <div class=\"modal-body\">\n          <input type=\"text\" id=\"editfaculty\" class=\"form-control\" name=\"\">\n        </div>\n        \n        <!-- Modal footer -->\n        <div class=\"modal-footer\">\n          <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n          <button type=\"button\" class=\"btn btn-success\" onclick=\"editFaculty2()\" data-dismiss=\"modal\">Submit</button>\n          \n        </div>\n        \n      </div>\n    </div>\n  </div>\n  <!-- endmodal -->\n\n\n\n  <!-- The Modal -->\n<!--   this modal is to add faculties -->\n  <div class=\"modal fade\" id=\"myModal1\">\n    <div class=\"modal-dialog modal-dialog-centered\">\n      <div class=\"modal-content\">\n      \n        <!-- Modal Header -->\n        <div class=\"modal-header\">\n          <h4 class=\"modal-title\">Add Faculty </h4>\n          <p id=\"modal_id\" style=\"display: hidden;\"></p>\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n        </div>\n        \n        <!-- Modal body -->\n        <div class=\"modal-body\">\n          <input type=\"text\" id=\"addfaculty\" class=\"form-control\" name=\"\">\n        </div>\n        \n        <!-- Modal footer -->\n        <div class=\"modal-footer\">\n          <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n          <button type=\"button\" class=\"btn btn-success\" onclick=\"addFaculty()\" data-dismiss=\"modal\">Submit</button>\n          \n        </div>\n        \n      </div>\n    </div>\n  </div>\n  <!-- endmodal -->\n\n\n\n\n{% csrf_token %}\n</body>\n\n\n\n\n{% endblock %}",
+			"file": "university project/project/templates/administrator/students.html",
+			"file_size": 3489,
+			"file_write_time": 132159663118024303,
+			"settings":
+			{
+				"buffer_size": 3371,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/users/models.py",
+			"settings":
+			{
+				"buffer_size": 1659,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +598,16 @@
 			"file": "university project/project/administrator/urls.py",
 			"settings":
 			{
-				"buffer_size": 1135,
+				"buffer_size": 1191,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/administrator/views.py",
+			"settings":
+			{
+				"buffer_size": 2702,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -550,8 +616,307 @@
 			"file": "university project/project/templates/administrator/faculty.html",
 			"settings":
 			{
-				"buffer_size": 8316,
+				"buffer_size": 8346,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/users/logout.html",
+			"settings":
+			{
+				"buffer_size": 326,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/users/urls.py",
+			"settings":
+			{
+				"buffer_size": 374,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/index/base.html",
+			"settings":
+			{
+				"buffer_size": 9699,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/users/views.py",
+			"settings":
+			{
+				"buffer_size": 1985,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/users/profile.html",
+			"settings":
+			{
+				"buffer_size": 1448,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/users/login.html",
+			"settings":
+			{
+				"buffer_size": 417,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/users/forms.py",
+			"settings":
+			{
+				"buffer_size": 1182,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/forms.py",
+			"settings":
+			{
+				"buffer_size": 8228,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/views.py",
+			"settings":
+			{
+				"buffer_size": 10129,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/models.py",
+			"settings":
+			{
+				"buffer_size": 1802,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/AuthBackend.py",
+			"settings":
+			{
+				"buffer_size": 518,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/users/register_success.html",
+			"settings":
+			{
+				"buffer_size": 907,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/users/admin.py",
+			"settings":
+			{
+				"buffer_size": 125,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/users/register.html",
+			"settings":
+			{
+				"buffer_size": 2163,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<div class=\"container register\">"
+			}
+		},
+		{
+			"file": "New folder/university-management/unimgt/settings/base.py",
+			"settings":
+			{
+				"buffer_size": 3328,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/project/settings.py",
+			"settings":
+			{
+				"buffer_size": 3805,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/atreat4u/settings.py",
+			"settings":
+			{
+				"buffer_size": 4242,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/users/authentication.py",
+			"settings":
+			{
+				"buffer_size": 1179,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/users/views.py",
+			"settings":
+			{
+				"buffer_size": 1640,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/users/admin.py",
+			"settings":
+			{
+				"buffer_size": 443,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/index/views.py",
+			"settings":
+			{
+				"buffer_size": 338,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/users/forms.py",
+			"settings":
+			{
+				"buffer_size": 1096,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/unimgt/urls.py",
+			"settings":
+			{
+				"buffer_size": 515,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{% load static %}\n\n<!doctype html>\n<html lang=\"en\">\n    <head>\n        <!-- Required meta tags -->\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n        <link rel=\"icon\" href=\"img/favicon.png\" type=\"image/png\">\n        <title>Education</title>\n        <!-- Bootstrap CSS -->\n<!--         <link rel=\"stylesheet\" href=\"{% static 'index/css/bootstrap.css' %}\">\n        <link rel=\"stylesheet\" href=\"{% static 'index/css/font-awesome.min.css' %}\"> -->\n<!-- Latest compiled and minified CSS -->\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n\n<!-- jQuery library -->\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n\n<!-- Popper JS -->\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n\n<!-- Latest compiled JavaScript -->\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n        \n        <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'users/register.css' %}\">\n\n    </head>\n    <body>\n\n\n    {% block body %}\n\n\n    {% endblock body %}\n\n\n</body>\n</html>\n\n\n\n\n",
+			"file": "New folder/university-management/users/templates/users/base.html",
+			"file_size": 1259,
+			"file_write_time": 132150843475756507,
+			"settings":
+			{
+				"buffer_size": 1225,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/users/models.py",
+			"settings":
+			{
+				"buffer_size": 981,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/real estate/Myproject/project/templates/sell.html",
+			"settings":
+			{
+				"buffer_size": 14543,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/HTML/New folder/new.html",
+			"settings":
+			{
+				"buffer_size": 8151,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": ".register{\n    background: -webkit-linear-gradient(left, #3931af, #00c6ff);\n    margin-top: 3%;\n    padding: 3%;\n}\n.register-left{\n    text-align: center;\n    color: #fff;\n    margin-top: 4%;\n}\n.register-left input{\n    border: none;\n    border-radius: 1.5rem;\n    padding: 2%;\n    width: 60%;\n    background: #f8f9fa;\n    font-weight: bold;\n    color: #383d41;\n    margin-top: 30%;\n    margin-bottom: 3%;\n    cursor: pointer;\n}\n.register-right{\n    background: #f8f9fa;\n    border-top-left-radius: 10% 50%;\n    border-bottom-left-radius: 10% 50%;\n}\n.register-left img{\n    margin-top: 15%;\n    margin-bottom: 5%;\n    width: 25%;\n    -webkit-animation: mover 2s infinite  alternate;\n    animation: mover 1s infinite  alternate;\n}\n@-webkit-keyframes mover {\n    0% { transform: translateY(0); }\n    100% { transform: translateY(-20px); }\n}\n@keyframes mover {\n    0% { transform: translateY(0); }\n    100% { transform: translateY(-20px); }\n}\n.register-left p{\n    font-weight: lighter;\n    padding: 12%;\n    margin-top: -9%;\n}\n.register .register-form{\n    padding: 10%;\n    margin-top: 10%;\n}\n.btnRegister{\n    float: right;\n    margin-top: 10%;\n    border: none;\n    border-radius: 1.5rem;\n    padding: 2%;\n    background: #0062cc;\n    color: #fff;\n    font-weight: 600;\n    width: 50%;\n    cursor: pointer;\n}\n.register .nav-tabs{\n    margin-top: 3%;\n    border: none;\n    background: #0062cc;\n    border-radius: 1.5rem;\n    width: 28%;\n    float: right;\n}\n.register .nav-tabs .nav-link{\n    padding: 2%;\n    height: 34px;\n    font-weight: 600;\n    color: #fff;\n    border-top-right-radius: 1.5rem;\n    border-bottom-right-radius: 1.5rem;\n}\n.register .nav-tabs .nav-link:hover{\n    border: none;\n}\n.register .nav-tabs .nav-link.active{\n    width: 100px;\n    color: #0062cc;\n    border: 2px solid #0062cc;\n    border-top-left-radius: 1.5rem;\n    border-bottom-left-radius: 1.5rem;\n}\n.register-heading{\n    text-align: center;\n    margin-top: 8%;\n    margin-bottom: -15%;\n    color: #495057;\n}",
+			"settings":
+			{
+				"buffer_size": 1991,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/Inventory/1kStore-master/app.js",
+			"settings":
+			{
+				"buffer_size": 3396,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "university project/project/index/models.py",
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/BUDESCODE/Documents/coding/projects/Inventory/1kStore-master/index.html",
+			"settings":
+			{
+				"buffer_size": 5166,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "New folder/university-management/unimgt/settings/local.py",
+			"settings":
+			{
+				"buffer_size": 572,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/templates/users/base.html",
+			"settings":
+			{
+				"buffer_size": 697,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 2007,
 				"line_ending": "Windows"
 			}
 		},
@@ -595,7 +960,7 @@
 			"file": "university project/project/administrator/models.py",
 			"settings":
 			{
-				"buffer_size": 487,
+				"buffer_size": 674,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -610,19 +975,45 @@
 			}
 		},
 		{
-			"file": "university project/project/project/settings.py",
+			"file": "university project/project/index/views.py",
 			"settings":
 			{
-				"buffer_size": 3392,
+				"buffer_size": 338,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "university project/project/index/urls.py",
+			"settings":
+			{
+				"buffer_size": 327,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "New folder/university-management/index/urls.py",
+			"settings":
+			{
+				"buffer_size": 327,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "university project/project/templates/administrator/sidebar.html",
+			"file": "university project/project/static/users/register.css",
 			"settings":
 			{
-				"buffer_size": 1026,
+				"buffer_size": 1991,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": ".register{"
+			}
+		},
+		{
+			"file": "university project/project/project/urls.py",
+			"settings":
+			{
+				"buffer_size": 1174,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -631,7 +1022,7 @@
 			"file": "university project/project/administrator/admin.py",
 			"settings":
 			{
-				"buffer_size": 135,
+				"buffer_size": 172,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -641,15 +1032,6 @@
 			"settings":
 			{
 				"buffer_size": 9102,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "university project/project/templates/index/base.html",
-			"settings":
-			{
-				"buffer_size": 9239,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -750,13 +1132,23 @@
 		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/index",
 		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/project",
 		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/static",
-		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/static/admin",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/static/administrator",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/static/users",
 		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/templates",
-		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/templates/administrator",
-		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/templates/index"
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/templates/admin1",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/templates/index",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/templates/users",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/university project/project/users"
 	],
 	"file_history":
 	[
+		"/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/views.py",
+		"/C/Users/BUDESCODE/Documents/coding/projects/Inventory/Myproject/project/administrator/views.py",
+		"/C/Users/BUDESCODE/Documents/coding/projects/Inventory/Myproject/project/index/views.py",
+		"/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/models.py",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/New folder/university-management/users/templates/users/register.html",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/project/university-management/unimgt/urls.py",
+		"/C/Users/BUDESCODE/Documents/coding/projects/university/project/university-management/users/models.py",
 		"/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/index.html",
 		"/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/Penwright/css/bootstrap.min.css",
 		"/C/Users/BUDESCODE/Documents/coding/projects/SCHOOL-AUTO-CBT/my project/package.json",
@@ -877,14 +1269,7 @@
 		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/jcarousel.css",
 		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/flexslider.css",
 		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/custom-fonts.css",
-		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/cslider.css",
-		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/bootstrap-responsive.css",
-		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/bootstrap.css",
-		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/animate.css",
-		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Gomez/index.html",
-		"/E/New Text Document.html",
-		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Serenity/components.html",
-		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Serenity/careers.html"
+		"/C/Users/omonbude/Documents/coding/project/Mr. Chuks/Flattern/css/cslider.css"
 	],
 	"find":
 	{
@@ -902,6 +1287,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"index.",
+			"micha",
+			"block",
+			"traffic",
+			"file ma",
+			"file",
+			"file m",
+			"file mana",
+			"sales",
+			"sales r",
+			"sale",
+			"form",
+			"seri",
+			"ser",
+			"seria",
+			"{",
+			"logout",
+			"\t<li class=\"nav-item submenu dropdown\">\n\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Login</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">\n\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"elements.html\">Elements</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li> ",
+			"authe",
+			"LoginForm",
+			"aut",
+			"id",
+			"cris",
 			"<table",
 			"table",
 			"editDepa",
@@ -947,12 +1355,562 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "university project/project/templates/admin1/students.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "university project/project/templates/admin1/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14863,
+								14863
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6831.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "university project/project/static/administrator/assets/plugins/bootstrap/css/bootstrap.min.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 153182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "university project/project/templates/administrator/department.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "university project/project/templates/administrator/sidebar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								710,
+								677
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 30.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/templates/outdoor-meal.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								526,
+								526
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "university project/project/templates/administrator/students.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "university project/project/users/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								559
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "university project/project/administrator/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "university project/project/administrator/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2676,
+								2676
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 593.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "university project/project/templates/administrator/faculty.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "university project/project/templates/users/logout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								253,
+								253
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "university project/project/users/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								335,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "university project/project/templates/index/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4235,
+								4235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 547.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 40,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "university project/project/users/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "university project/project/templates/users/profile.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1279,
+								1279
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 208.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "university project/project/templates/users/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								417,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 42,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "university project/project/users/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 49.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/views.py",
 					"semi_transient": false,
 					"settings":
 					{
@@ -963,38 +1921,8 @@
 						"selection":
 						[
 							[
-								1069,
-								90
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "university project/project/administrator/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2531,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1931,
-								1951
+								6193,
+								6100
 							]
 						],
 						"settings":
@@ -1003,48 +1931,19 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 182.0,
+						"translation.y": 2543.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 41,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "university project/project/administrator/urls.py",
+					"buffer": 20,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1033,
-								1043
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "university project/project/templates/administrator/faculty.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8316,
+						"buffer_size": 1802,
 						"regions":
 						{
 						},
@@ -1052,24 +1951,724 @@
 						[
 							[
 								0,
-								8316
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 406.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 44,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/account/AuthBackend.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "university project/project/templates/users/register_success.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 43,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "university project/project/users/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "university project/project/templates/users/register.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1683,
+								1683
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div class=\"container register\">",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 181.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "New folder/university-management/unimgt/settings/base.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3114,
+								3114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 511.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "university project/project/project/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3483,
+								3483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1669.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/atreat4u project/atreat4u/atreat4u/atreat4u/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3526,
+								3493
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1679.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 45,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "New folder/university-management/users/authentication.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "New folder/university-management/users/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "New folder/university-management/users/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "New folder/university-management/index/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 49,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "New folder/university-management/users/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "New folder/university-management/unimgt/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 515,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "New folder/university-management/users/templates/users/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1223,
+								1223
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2928.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 50,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 35,
+					"file": "New folder/university-management/users/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								981,
+								82
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/real estate/Myproject/project/templates/sell.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3417,
+								3381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "/C/Users/BUDESCODE/Documents/coding/HTML/New folder/new.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1991,
+								1991
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 51,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/Inventory/1kStore-master/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 55,
+					"type": "text"
+				},
+				{
+					"buffer": 40,
+					"file": "university project/project/index/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "/C/Users/BUDESCODE/Documents/coding/projects/Inventory/1kStore-master/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 46,
+					"type": "text"
+				},
+				{
+					"buffer": 42,
+					"file": "New folder/university-management/unimgt/settings/local.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								572,
+								572
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 54,
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "university project/project/templates/users/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 52,
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								555,
+								555
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 45,
 					"file": "university project/project/project/processors.py",
 					"semi_transient": false,
 					"settings":
@@ -1093,11 +2692,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 46,
 					"file": "university project/project/templates/administrator/base.html",
 					"semi_transient": false,
 					"settings":
@@ -1123,11 +2722,11 @@
 						"translation.y": 212.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 57,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 47,
 					"file": "university project/project/templates/administrator/add_faculty.html",
 					"semi_transient": false,
 					"settings":
@@ -1151,11 +2750,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 48,
 					"file": "university project/project/templates/administrator/add_department.html",
 					"semi_transient": false,
 					"settings":
@@ -1179,24 +2778,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 49,
 					"file": "university project/project/administrator/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 487,
+						"buffer_size": 674,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								483,
-								483
+								674,
+								674
 							]
 						],
 						"settings":
@@ -1207,11 +2806,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 50,
 					"file": "university project/project/templates/administrator/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1223,8 +2822,8 @@
 						"selection":
 						[
 							[
-								5799,
-								5799
+								4249,
+								4253
 							]
 						],
 						"settings":
@@ -1234,87 +2833,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1546.0,
+						"translation.y": 1423.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "university project/project/project/settings.py",
+					"buffer": 51,
+					"file": "university project/project/index/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3392,
+						"buffer_size": 338,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3318,
-								3318
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1311.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "university project/project/templates/administrator/sidebar.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1026,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								707,
-								707
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "university project/project/administrator/admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								135,
-								135
+								338,
+								0
 							]
 						],
 						"settings":
@@ -1325,11 +2864,156 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 52,
+					"file": "university project/project/index/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								327,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 53,
+					"file": "New folder/university-management/index/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								327,
+								327
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 53,
+					"type": "text"
+				},
+				{
+					"buffer": 54,
+					"file": "university project/project/static/users/register.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1991,
+								1991
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".register{",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 606.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 56,
+					"type": "text"
+				},
+				{
+					"buffer": 55,
+					"file": "university project/project/project/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								777,
+								702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 56,
+					"file": "university project/project/administrator/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 48,
+					"type": "text"
+				},
+				{
+					"buffer": 57,
 					"file": "university project/project/templates/index/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1354,37 +3038,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "university project/project/templates/index/base.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9239,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1373,
-								1373
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
+					"stack_index": 47,
 					"type": "text"
 				}
 			]
@@ -1427,7 +3081,7 @@
 	},
 	"output.exec":
 	{
-		"height": 168.0
+		"height": 26.0
 	},
 	"output.find_results":
 	{
@@ -1483,7 +3137,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 330.0,
+	"side_bar_width": 336.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

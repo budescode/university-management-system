@@ -1,0 +1,407 @@
+{% extends 'admin1/index.html' %}
+
+{% block shortcut %}
+{% endblock %}
+
+{% block body %}
+
+<body>
+<div class="col-md-12">
+<div class="table-responsive">
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th><i class="fa fa-school"></i> Faculty</th>
+        <th><i class="fa fa-school"></i> Department</th>
+        
+        <th><i class="fa fa-edit"></i> Edit</th>
+        <th> <i class="fa fa-trash"></i> Delete</th>
+        <th></th>
+        
+      </tr>
+    </thead>
+    <tbody id="tablebody">
+    {% for i in qs %}
+      <tr id="tr{{i.id}}">
+        <td id="faculty{{i.id}}">{{i.faculty}}</td>
+        <td id="department{{i.id}}">{{i.department}}</td>
+        
+
+       <td> <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#myModal" onclick="editDepartment('{{i.id}}')">Edit</button> 
+       </td>
+
+        <td> <button class="btn btn-danger btn-small" onclick="deleteDepartment('{{i.id}}')">Delete</button></td>
+        <td id='loading{{i.id}}' style="display: none;">Loading...</td>
+        
+      </tr>
+	{% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Add</button>
+</div>
+
+
+
+  <!-- The Modal -->
+<!--   this modal is to edit faculties -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Department </h4>
+          <p id="modal_id" style="display: hidden;"></p>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="form-group">
+          <label for="sel1">Select Faculty:</label>
+          <select class="form-control" id="editfaculty">
+            {% for i in faculty %}
+          <option>{{i.faculty}}</option>
+          {% endfor %}
+         
+          </select>
+          </div>
+
+          <div class="form-group">
+          <input type="text" id="editdepartment" class="form-control" name="">
+        </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" onclick="editDepartment2()" data-dismiss="modal">Submit</button>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- endmodal -->
+
+
+
+  <!-- The Modal -->
+<!--   this modal is to add faculties -->
+  <div class="modal fade" id="myModal1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add Faculty </h4>
+          <p id="modal_id" style="display: hidden;"></p>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+
+          <div class="form-group">
+          <label for="sel1">Select Faculty:</label>
+          <select class="form-control" id="addfaculty">
+            {% for i in faculty %}
+          <option>{{i.faculty}}</option>
+          {% endfor %}
+         
+          </select>
+          </div>
+
+           <div class="form-group">
+            <label for="sel1">Add Department:</label>
+          <input type="text" id="adddepartment" class="form-control" name="">
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" onclick="addDepartment()" data-dismiss="modal">Submit</button>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- endmodal -->
+
+
+
+
+{% csrf_token %}
+</body>
+
+
+<script>
+
+	
+function addDepartment(){
+	
+	addfaculty = document.querySelector('#addfaculty').value
+  adddepartment = document.querySelector('#adddepartment').value
+  
+    token = document.querySelector("input[name=csrfmiddlewaretoken]").value
+
+    var url = 'http://' + '{{domain}}' + '/administrator/add-department/'
+
+
+    let  formData = new FormData()
+
+    formData.append('addfaculty', addfaculty)
+    formData.append('adddepartment', adddepartment)
+    
+    
+    fetch(url,
+    {
+    body: new URLSearchParams(formData),
+    method: 'post',
+    headers:{
+    'X-CSRFTOKEN': token
+    }
+
+
+    }).then(res => res.json()).then(function(data) {
+
+    console.log(data)
+	var tablebody = document.querySelector("#tablebody")
+	var tr = document.createElement("tr")
+	tr.setAttribute('id', 'tr'+ data.id)
+		  var td1 = document.createElement("td")
+		  var text1 = document.createTextNode(data.addfaculty)
+		  td1.setAttribute('id', "faculty"+data.id)
+
+      var td11 = document.createElement("td")
+      var text11 = document.createTextNode(data.adddepartment)
+      td11.setAttribute('id', "department"+data.id)
+      
+
+		var td2 = document.createElement("td")
+		var icon1 = document.createElement('button')
+		icon1.setAttribute('class', "btn btn-primary")
+		icon1.innerHTML = "Edit";
+		icon1.setAttribute('data-toggle', "modal")
+		icon1.setAttribute('data-target', "#myModal")
+		icon1.onclick = function editDepartment3(){
+		console.log('editing', data)
+		editfaculty = document.querySelector('#editfaculty').value = data.addfaculty
+    editdepartment = document.querySelector('#editdepartment').value = data.adddepartment
+    
+		//this will set the modal value to the value clicked
+
+		modal_id = document.querySelector('#modal_id').innerHTML = data.id
+		}
+
+
+		var td3 = document.createElement("td")
+		var icon2 = document.createElement('button')
+		icon2.setAttribute('class', "btn btn-danger")
+		icon2.innerHTML = "Delete";
+		icon2.onclick = function deleteFaculty3(){
+
+			console.log('deleting', data.id)
+			loading_id = '#loading'+ data.id
+			document.querySelector(loading_id).style.display = 'block'
+
+			token = document.querySelector("input[name=csrfmiddlewaretoken]").value
+
+			var url = 'http://' + '{{domain}}' + '/administrator/delete-department/' + data.id +'/'
+
+
+			let  formData = new FormData()
+			formData.append('id', data.id)
+
+
+			fetch(url,
+			{
+			body: new URLSearchParams(formData),
+			method: 'post',
+			headers:{
+			'X-CSRFTOKEN': token
+			}
+
+
+			}).then(res => res.json()).then(function(data) {
+			console.log(data.id)
+			qs = '#tr' + data.id
+			faculty = document.querySelector(qs)
+			faculty.remove()
+			loading_id = '#loading'+ data.id
+
+			document.querySelector(loading_id).style.display = 'none'
+			// td =  document.querySelector('#tr'+x.id)
+			// td.remove()
+
+
+			})
+
+
+
+		}
+
+
+		 var td4 = document.createElement("td")
+		 td4.setAttribute('id', "loading"+data.id)
+		 td4.innerHTML = 'loading...'
+		 td4.style.display = 'none'
+
+
+		 td1.appendChild(text1)
+     td11.appendChild(text11)
+     
+		 // icon1.appendChild(text2)
+		 // icon2.appendChild(text3)
+		 
+		 td2.appendChild(icon1)
+		 td3.appendChild(icon2)
+		 
+			
+		  tr.appendChild(td1)
+      tr.appendChild(td11)
+      
+		  tr.appendChild(td2)
+		  tr.appendChild(td3)
+		  tr.appendChild(td4)
+		  
+		  tablebody.appendChild(tr)
+		  
+		 
+
+		
+
+   
+
+    })
+
+
+	
+} 
+
+
+	function editDepartment(id){
+		
+		data = '#department' + id
+		department = document.querySelector(data).innerHTML
+    editdepartment = document.querySelector('#editdepartment').value = department
+
+    data1 = '#faculty' + id
+    faculty = document.querySelector(data1).innerHTML
+    editfaculty = document.querySelector('#editfaculty').value = faculty
+
+
+
+		//this will set the modal value to the value clicked
+
+		modal_id = document.querySelector('#modal_id').innerHTML = id
+		//this will set the modal id, the id will be taken when we want to send request to the server
+		
+    // td =  document.querySelector('#tr'+id)
+    // td.remove()
+
+	}
+
+
+
+//thiis function is to send the data to the server
+function editDepartment2(){
+	id = document.querySelector('#modal_id').innerHTML
+
+	loading_id = '#loading'+ id
+	document.querySelector(loading_id).style.display = 'block'
+
+	editfaculty = document.querySelector('#editfaculty').value 
+  editdepartment = document.querySelector('#editdepartment').value 
+  
+	domain = '{{domain}}'
+	
+    token = document.querySelector("input[name=csrfmiddlewaretoken]").value
+
+    var url = 'http://' + domain + '/administrator/edit-department/' + id +'/'
+
+
+    let  formData = new FormData()
+    formData.append('id', id)
+    formData.append('editfaculty', editfaculty)
+    formData.append('editdepartment', editdepartment)
+    
+    
+    fetch(url,
+    {
+    body: new URLSearchParams(formData),
+    method: 'post',
+    headers:{
+    'X-CSRFTOKEN': token
+    }
+
+
+    }).then(res => res.json()).then(function(data) {
+    	qs = '#faculty' + data.id
+      qs1 = '#department' + data.id
+      
+    	faculty = document.querySelector(qs).innerHTML = data.editfaculty
+      department = document.querySelector(qs1).innerHTML = data.editdepartment
+      
+    
+    document.querySelector(loading_id).style.display = 'none'
+    // td =  document.querySelector('#tr'+x.id)
+    // td.remove()
+   
+
+    })
+
+
+
+}
+
+	function deleteDepartment(id){
+		console.log(id)
+	loading_id = '#loading'+ id
+	document.querySelector(loading_id).style.display = 'block'
+
+    token = document.querySelector("input[name=csrfmiddlewaretoken]").value
+
+    var url = 'http://' + '{{domain}}' + '/administrator/delete-department/' + id +'/'
+
+
+    let  formData = new FormData()
+    formData.append('id', id)
+ 
+    
+    fetch(url,
+    {
+    body: new URLSearchParams(formData),
+    method: 'post',
+    headers:{
+    'X-CSRFTOKEN': token
+    }
+
+
+    }).then(res => res.json()).then(function(data) {
+    	console.log(data.id)
+    	qs = '#tr' + data.id
+    	faculty = document.querySelector(qs)
+    	faculty.remove()
+    	loading_id = '#loading'+ data.id
+  
+    document.querySelector(loading_id).style.display = 'none'
+    // td =  document.querySelector('#tr'+x.id)
+    // td.remove()
+   
+
+    })
+
+
+
+	}
+
+	
+</script>
+
+{% endblock %}

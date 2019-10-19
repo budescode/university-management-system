@@ -16,3 +16,11 @@ class Department(models.Model):
 
 	def __str__ (self):
 		return self.department
+
+
+class Course(models.Model):
+	department = models.ForeignKey(Department, on_delete = models.CASCADE)
+	course = models.CharField(max_length=100)
+
+	def __str__(self):
+		return self.course
