@@ -5,6 +5,7 @@ import random
 from django.contrib.auth.models import User
 from .models import CustomUser
 from django.contrib.auth import authenticate, login, get_user_model, logout
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def register(request):
@@ -51,10 +52,11 @@ def login_view(request):
 	return render(request, "users/login.html", context)
 
 
+@login_required(login_url='/users/login/')
 def profile(request):
 	qs = CustomUser.objects.get(user = request.user)
 	context = {'qs':qs}
-	return render(request, 'users/profile.html', context)
+	return render(request, 'student/index.html', context)
 
 
 def logout_view(request):

@@ -1,0 +1,62 @@
+   {% load staticfiles %}
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion"> 
+          <p class="centered"><a href=""><img src="{% static 'student/img/fr-05.jpg' %}" class="img-circle" width="80"></a></p>
+          <h5 class="centered">{{request.user.username}}</h5>
+          <li class="mt">
+            <a class="" href="">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+
+
+        <li class="mt">
+        <a class="" href="">
+        <i class="fa fa-home"></i>
+        <span>Homework</span>
+        </a>
+        </li>
+
+
+
+
+          <li>
+
+            <a href="">
+              <i class="fa fa-rss-square"></i>
+              <span>Time Table </span>
+
+              <span class="label label-theme pull-right mail-info">{{context_post}}</span>
+              </a>
+          </li>
+
+
+        <li data-toggle="modal" data-target="#myModal2">
+
+            <a>
+              <i class="fa fa-rss-square"></i>
+              <span>Exam</span>
+
+              <span class="label label-theme pull-right mail-info">{{context_post}}</span>
+              </a>
+          </li>
+
+
+
+        </ul>
+        <!-- sidebar menu end-->
+
+
+
+
+
+
+      </div>
+    </aside>
+
+
+
+
